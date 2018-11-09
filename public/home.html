@@ -46,12 +46,12 @@
           for (var i = 0; i < data.length; i++) {
             var listGroupItem = $("<li class='list-group-item'>");
 
-            listGroupItem.append($("<h2>").text("Title: " + data[i].notetitle));
-            listGroupItem.append($("<h3>").text("Note: " + data[i].notebody));
+            listGroupItem.append($("<h2>").text(data[i].notetitle));
+            listGroupItem.append($("<h3>").text(data[i].notebody));
             
 
             $("#notes").append(listGroupItem);
-            console.log('yay')
+            
           }
         });
     </script>
